@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Base</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Tabelinha Bem Simplisinha</h2>
+    <table>
+        <tr>
+            <th>Pessoa 1</th>
+            <th>Pessoa 2</th>
+            <th>Pessoa 3</th>
+        </tr>
+        <tr>
+            <td>Jenoveva</td>
+            <td>Josefina</td>
+            <td>Jurema</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <br>
+    <h2>Tabelinha Nem Tão Simplisinha</h2>
+    <table>
+        <caption>Bem Mesmo</caption>
+        <tr>
+            <th rowspan="3">Comida</th>
+            <th>Nome</th>
+            <th colspan="2">Salgados</th>
+        </tr>
+        <!--"rowspan" para juntar linhas; "colspan" para juntar colunas-->
+        <tr>
+            <td>Jenoveva</td>
+            <td>Josefina</td>
+            <td>Jurema</td>
+        </tr>
+        <tr>
+            <td>Pizza</td>
+            <td>Pastel</td>
+            <td>Coxinha</td>
+        </tr>
+    </table>
+
+    <br>
+    <h2>Tabelinha de Verdade</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>Jenoveva</th>
+            <th>Josefina</th>
+            <th>Jurema</th>
+        </tr>
+        <tr>
+            <th>Salgados</th>
+            <td>Pizza</td>
+            <td>Pastel</td>
+            <td>Coxinha</td>
+        </tr>
+        <tr>
+            <th>Doces</th>
+            <td>Brigadeiro</td>
+            <td>Bolacha</td>
+            <td>Chocolate</td>
+        </tr>
+    </table>
+
+    <br>
+    <h2>Tabelinha de Imagens</h2>
+    <table>
+        <tr>
+            <th>Comida</th>
+            <th>Sabor</th>
+            <th>Ilustração</th>
+        </tr>
+        <tr>
+            <td>Pizza</td>
+            <td>Calabresa</td>
+            <td>
+                <img src="imagens/pizzaDeCalabresa.jpeg" alt="Pizza Calabreza" title="Pizza de Calabresa"
+                    style="width: 150px; height: 115px;">
+            </td>
+        </tr>
+        <tr>
+            <td>Pastel</td>
+            <td>Quatro Queijos</td>
+            <td>
+                <img src="imagens/pastelDeQuatroQueijos.jpeg" alt="Pastel Quatro Queijos"
+                    title="Pastel de Quatro Queijos" style="width: 150px; height: 115px;">
+            </td>
+        </tr>
+        <tr>
+            <td>Coxinha</td>
+            <td>Frango</td>
+            <td>
+                <img src="imagens/coxinhaDeFrango.jpeg" alt="Coxinha Frango" title="Coxinha de Frango"
+                    style="width: 150px; height: 150px;">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Diferentes Tamanhos</title>
+</head>
+
+<body>
+    <h2>"Picture"</h2>
+    <picture>
+        <source style="width: 1000px; height: 900px;" media="(min-width: 1000px)" 
+        srcset="imagens/vegetais.jpg">
+        <source style="width: 650px; height: 800px;" media="(min-width: 650px)" 
+        srcset="imagens/carroEsportivo.jpg">
+        <img src="imagens/menininha.jpg" style="width:auto;">
+    </picture>
+    <!--A imagem muda dependendo do tamanho da tela-->
+    <!--
+        Alguns navegadores ou dispositivos podem não suportar todos os formatos de imagem. 
+        Ao usar o <picture> elemento, você pode adicionar imagens de todos os formatos, e o navegador 
+        usará o primeiro formato que reconhecer e ignorará qualquer um dos seguintes elementos.
+    -->
+
+</body>
+
+</html>
