@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        h1 {
+            background-color: blue;
+            color: white;
+        }
+
+        #titulo-principal {
+            background-color: green;
+            text-decoration: underline;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        #txtNome:hover {
+            border: 2px red solid;
+            padding: 5px;
+        }
+
+        #txtNome:focus {
+            border: 5px red solid;
+            padding: 5px;
+        }
+
+        strong {
+            text-decoration: overline underline;
+            font-weight: normal;
+        }
+
+        strong:hover {
+            background-color: green;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #esconder > p {
+            background-color: yellow;
+            padding: 20px;
+            display: none;
+        }
+
+        #esconder:hover > p {
+            display: block;
+        }
+
+        #especial > p::first-letter {
+            font-size: 2em;
+            background-color: yellow;
+            border: 2px blueviolet solid;
+            padding: 5px;
+        }
+        
+        #especial > p:hover::first-letter {
+            background-color: blueviolet;
+            border: 2px yellow solid;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body style="margin: 0;">
+
+    <h1 id="titulo-principal" class="center italic">Título I</h1>
+    <p class="right">
+        Parágrafo I: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum officiis, iste nostrum nesciunt
+        voluptatum rerum quae aut,
+        aperiam beatae itaque quidem? Dolore cum ducimus asperiores, quae voluptate impedit. Odit, nobis?
+    </p>
+    <p class="center">
+        Parágrafo II: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat maxime ullam voluptatum
+        aliquid praesentium!
+        Et, itaque eius, possimus repellendus quae harum natus voluptates accusamus ducimus reiciendis sunt ullam
+        cumque.
+    </p>
+    <p>
+        Parágrafo V: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsam minus perferendis dicta,
+        voluptas quibusdam sit quaerat impedit! Sunt eaque nam nihil labore possimus culpa quisquam consequuntur?
+        Cum, officiis laudantium!
+    </p>
+
+    <h1>Título II</h1>
+    <p>
+        Parágrafo III: <strong>Lorem</strong> ipsum dolor sit amet consectetur, adipisicing elit. Molestias omnis
+        praesentium maiores
+        nisi
+        consectetur, dolores blanditiis quis ipsam nulla <strong>voluptates</strong> explicabo? Labore repellat error
+        eveniet quidem
+        magni ratione rerum doloremque!
+    </p>
+    <p>
+        Parágrafo IV: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi asperiores possimus voluptas,
+        necessitatibus ratione consequuntur dicta, ullam nisi cumque doloribus vitae? Minima delectus dolorum sint esse
+        adipisci provident temporibus eligendi.
+    </p>
+
+    <input type="text" id="txtNome">
+
+    <div id="esconder">
+        <h2>Teste</h2>
+        <p>
+            Parágrafo V: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsam minus perferendis dicta,
+            voluptas quibusdam sit quaerat impedit! Sunt eaque nam nihil labore possimus culpa quisquam consequuntur?
+            Cum, officiis laudantium!
+        </p>
+    </div>
+
+    <div id="especial">
+        <p>
+            Parágrafo VI: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio a magnam ullam, totam, sint
+            quia porro esse ipsam, ipsum optio recusandae. Nisi laudantium harum cum sit, ipsa culpa odit.
+        </p>
+    </div>
+
+</body>
+
+</html>
