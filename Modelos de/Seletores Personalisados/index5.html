@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com seletores</title>
+
+    <style>
+        h1{
+            background-color: blue;
+            color: white;
+        }
+        #titulo-principal{
+            text-decoration: underline;
+            background-color: green;
+        }
+        .left{
+            text-align: left;
+        }
+        .right{
+            text-align: right;
+        }
+        .center{
+            text-align: center;
+        }
+        .italic{
+            font-style: italic;
+        }
+        *{
+            margin: 0;
+            text-align: justify;
+        }
+        #txtNome:focus{
+            border: 5px red solid;
+        }
+        strong{
+            font-weight: normal;
+            text-decoration: underline;
+        }
+        strong:hover{
+            text-decoration: none;
+            background-color: yellow;
+            font-weight: bold;
+        }
+        #esconde-escode > p{
+            background-color: yellow;
+            padding: 20px;
+            display: none;
+        }
+        #esconde-escode:hover > p{
+            display: block;   
+        }
+
+        #especial > p::first-letter{
+            font-size: 2em;
+            border: solid 2px blue;
+            background-color: yellow;
+        }
+        #especial > p:hover::first-letter{
+            background-color: lime;
+            font-size: 5em;
+        }
+        #especial > p::selection{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo-principal" class="left center italic">Titulo principal</h1>
+    <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus accusantium optio aliquam corrupti consequuntur error, quidem omnis repellat ab praesentium ea iste autem veniam non mollitia voluptatem eligendi. Repellat, eaque.</p>
+    <p class="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus accusantium optio aliquam corrupti consequuntur error, quidem omnis repellat ab praesentium ea iste autem veniam non mollitia voluptatem eligendi. Repellat, eaque.</p>
+    <h1 class="right">Titulo secundário</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis non, alias possimus porro expedita labore sequi laborum at minima veniam earum deleniti delectus dicta sit voluptatem, animi mollitia quas sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis non, alias possimus porro expedita labore sequi laborum at minima veniam earum deleniti delectus dicta sit voluptatem, animi mollitia quas sunt.</p>
+
+
+    <input type="text" name="" id="txtNome">
+    
+    <p>
+        Lorem <strong>Teste</strong> ipsum dolor, sit amet consectetur adipisicing elit. Cum, nam ex. Dolorum enim sunt modi in, sequi illo iure rem eius porro minima id, explicabo nemo possimus iusto <strong>Teste</strong> praesentium laudantium!
+    </p>
+
+
+    <div id="especial">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos maiores facilis, adipisci voluptates sint sapiente nulla debitis repellat eaque atque inventore id delectus cumque repellendus possimus magnam asperiores tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos maiores facilis, adipisci voluptates sint sapiente nulla debitis repellat eaque atque inventore id delectus cumque repellendus possimus magnam asperiores tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos maiores facilis, adipisci voluptates sint sapiente nulla debitis repellat eaque atque inventore id delectus cumque repellendus possimus magnam asperiores tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos maiores facilis, adipisci voluptates sint sapiente nulla debitis repellat eaque atque inventore id delectus cumque repellendus possimus magnam asperiores tenetur.</p>
+    </div>
+
+
+    
+    <div id="esconde-escode">
+        <h2> Teste </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam consequatur tempora ea minus cumque facere quo, dolorem eligendi rem vitae ex possimus iste voluptates aut sed placeat, corporis ipsam.</p>
+    </div>
+</body>
+</html>

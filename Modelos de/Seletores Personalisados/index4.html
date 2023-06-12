@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores personalizados</title>
+    <style>
+        .centro{
+            text-align: center;
+        }
+        .justo{
+            text-align: justify;
+        }
+        .esq{
+            text-align: left;
+        }
+        .sublinhado{
+            text-decoration: underline;
+        }
+        #teste::first-letter{
+            font-size: 3em;
+            background-color: yellow;
+            border: 2px double red;
+        }
+        #teste:hover::first-letter{
+            background-color: green;
+            color: white;
+        }
+
+        #teste2::first-line{
+            font-style: italic;
+        }
+
+        .extra::before{
+            content: "------";
+            border: 1px solid red;
+        }
+        .extra::after{
+            content: "------";
+            border: 1px solid red;
+        }
+
+        p.surprise{
+            display: none;
+        }
+
+        div.surprise:hover > p.surprise{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="centro sublinhado" id="teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt provident, sit necessitatibus, quos eius enim dolores magnam ratione, beatae dignissimos molestiae voluptate? Quisquam fugit aspernatur, quaerat recusandae rem id ipsa.</p>
+    <p class="justo" id="teste2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt provident, sit necessitatibus, quos eius enim dolores magnam ratione, beatae dignissimos molestiae voluptate? Quisquam fugit aspernatur, quaerat recusandae rem id ipsa.</p>
+    <p class="esq sublinhado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt provident, sit necessitatibus, quos eius enim dolores magnam ratione, beatae dignissimos molestiae voluptate? Quisquam fugit aspernatur, quaerat recusandae rem id ipsa.</p>
+    <p class="extra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt provident, sit necessitatibus, quos eius enim dolores magnam ratione, beatae dignissimos molestiae voluptate? Quisquam fugit aspernatur, quaerat recusandae rem id ipsa.</p>
+
+
+    <div class="surprise">
+        <p>Passe o mouse aqui!</p>
+
+        <p class="surprise">SURPRISE!!!</p>
+
+    </div>
+
+    
+</body>
+</html>

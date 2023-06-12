@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+
+    <style>
+       
+        p{
+            /*border: 3px solid blue;*/
+
+            border-color: gray;
+            border-style: solid;
+            border-width: 5px;
+
+            
+            padding: 30px;
+        }
+        #p1, #p2{
+            float: left;
+            width: 150px;
+        }
+        #p1{
+            margin-right: 0px;
+        }
+        #p2{
+            margin-left: -20px;
+            
+        }
+
+        #blue{
+            background-color: blue;
+        }
+        #green{
+            background-color: green;
+            margin-left: -50px;
+        }
+        #red{
+            background-color: red;
+            margin-left: -50px;
+        }
+        #yellow{
+            background-color: yellow;
+            margin-left: -50px;
+        }
+        #blue, #red, #green, #yellow{
+            height: 150px;
+            width: 150px;
+            float: left;
+            position: relative;
+            border: solid black 2px;
+        }
+        #blue:hover, #green:hover, #red:hover,
+        #yellow:hover{
+            z-index: 5;
+            width: 200px;
+            height: 200px;
+        }
+        main, footer{
+            clear: both;
+        }
+
+        #caixa-borda, #caixa-conteudo{
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            margin: 20px;
+            padding: 20px
+        }
+        #caixa-borda{
+            box-sizing: border-box;
+        }
+       
+        #imgRap{
+            clear: both;
+            height: 150px;
+            width: 150px;
+            display: block;
+            margin: auto;
+        }
+
+
+
+       
+    </style>
+
+</head>
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quo, debitis corporis suscipit aperiam</p>
+
+
+
+    <main>
+        <div id="blue"></div>
+        <div id="green"></div>
+        <div id="red"></div>
+        <div id="yellow"></div>
+    </main>
+
+    <footer>
+        <div id="caixa-borda"></div>
+        <div id="caixa-conteudo"></div>
+
+    </footer>
+    
+    <img id="imgRap" src="imagens/raposa1.jpg" alt="">
+    <h1>Teste</h1>
+
+</body>
+</html>

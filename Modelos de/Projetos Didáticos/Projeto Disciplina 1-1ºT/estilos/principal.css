@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+.menu{
+    background-color: rgb(187, 121, 0);
+    color: white;
+    text-decoration: none;
+
+    border: 2px whitesmoke solid;
+    padding: 15px;
+    margin-right: 25px;
+
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px gray;
+}
+
+body{
+    background-color: rgb(251, 183, 57);
+}
+h1, h2{
+    text-align: center;
+}
+
+#ativo{
+    background-color: rgb(243, 178, 56);
+}

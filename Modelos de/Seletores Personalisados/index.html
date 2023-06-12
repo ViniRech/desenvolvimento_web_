@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores personalizados</title>
+    <style>
+        :root{
+            --cor-principal: blue;
+            --fonte-principal: 'Courier New', Courier, monospace;
+        }
+        h1{
+            background-color: var(--cor-principal);
+            color: white;
+        }
+        .centralizado{
+            text-align: center;
+        }
+        p.centralizado{
+            font-weight: bold;
+        }
+        .sublinhado{
+            text-decoration: underline;   
+            font-style: italic;
+            background-color: red;   
+            color: white;  
+        }
+        #importante{
+            background-color: green;
+            color: orange;
+        }
+
+        p > strong{
+            background-color: yellow;
+            color: black;
+        }
+        h1+p+p{
+            font-family: var(--fonte-principal)
+        }
+
+        p.surprise{
+            display: none;
+        }
+        div.surprise:hover > p.surprise{
+            display: block;
+            background-color: lime;
+        }
+        p::first-letter{
+            font-size: 32px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="importante" class="centralizado sublinhado">Principal</h1>
+    <p class="centralizado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque possimus tenetur minus omnis dolorem similique rerum nam officiis, magnam sunt aliquam velit eaque voluptates adipisci ab consectetur placeat. Fuga, iure!</p>
+    <p class="sublinhado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minima officiis assumenda eveniet deserunt perferendis, in debitis suscipit placeat repudiandae quasi recusandae. Culpa accusamus atque ipsa eaque tempore ipsum voluptate!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam odio, doloremque, quisquam dicta enim itaque natus illo tenetur eum vitae error molestias quo ipsum perspiciatis debitis harum dignissimos totam sunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, expedita, ratione optio facilis vitae voluptas doloremque ducimus dolorem ab quisquam aperiam id accusamus deserunt! Harum repudiandae labore hic quibusdam eius.</p>
+
+    <h1>Título <strong>Secundário</strong></h1>
+
+    <p class="sublinhado"> <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit. Cumque possimus tenetur minus omnis dolorem similique rerum nam officiis, magnam sunt aliquam velit eaque voluptates adipisci ab consectetur placeat. Fuga, iure!</p>
+    <p><strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit. Hic minima officiis assumenda eveniet deserunt perferendis, in debitis suscipit placeat repudiandae quasi recusandae. Culpa accusamus atque ipsa eaque tempore ipsum voluptate!</p>
+    <p><strong>Lorem</strong> ipsum, dolor sit amet consectetur adipisicing elit. Aperiam odio, doloremque, quisquam dicta enim itaque natus illo tenetur eum vitae error molestias quo ipsum perspiciatis debitis harum dignissimos totam sunt?</p>
+    <p><strong>Lorem</strong> ipsum dolor sit amet consectetur, adipisicing elit. Odio, expedita, ratione optio facilis vitae voluptas doloremque ducimus dolorem ab quisquam aperiam id accusamus deserunt! Harum repudiandae labore hic quibusdam eius.</p>
+
+
+
+    <div class="surprise">
+        <p>PASSE O MOUSE AQUI!</p>
+        <p class="surprise">SUPRISE!!!!!</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed numquam eveniet dignissimos corrupti, autem ullam nobis, sapiente nisi suscipit tempore? Ratione itaque fuga quidem non deleniti, minima quod architecto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius amet dolorum assumenda, corporis quia pariatur nemo ratione mollitia saepe rem accusamus quibusdam ut autem ipsa? Labore veritatis consequatur neque!</p>
+
+</body>
+</html>
