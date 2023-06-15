@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Itens</title>
+    <style>
+        .principal{
+            display: grid;
+            grid-template-columns: 150px 1fr 300px;
+            grid-template-rows: 150px auto 250px;
+        }
+        .itens{
+            height: 100%;
+            width: 100%;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        #logo{
+            background-color: red;
+        }
+        #logo > img{
+            height: 100%;
+            width: 100%;
+        }
+        #titulo-principal{
+            background-color: blue;
+            color: white;
+            
+            font-size: 90px;
+            text-align: center;
+            line-height: 150px;
+
+
+            /*grid-column-start: 2;
+            grid-column-end: 4;
+            
+            grid-column: 2/4;*/
+            grid-column: 2 / span 2;
+        }
+
+        #menu{
+                background-color: green;
+                color: white;
+                min-height: 100px;
+
+                grid-row: 2/span 2;
+            }
+        ul > li{
+            list-style: none;
+            font-size: 32px;
+            
+        }
+        ul a{
+            display: inline-block;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 5px;
+            margin-bottom: 7px;
+            border-radius: 10px/3px;
+            text-decoration: none;
+            background-color: rgb(1, 152, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <div class="itens" id="logo">
+            <img src="imagens/fox.ico" alt="">
+        </div>
+        <div class="itens" id="titulo-principal">
+            Meu jornal
+
+        </div>
+
+        <div class="itens" id="menu">
+            <ul>
+                <li>
+                    <a href="#">Link 1</a>
+                </li>
+                <li>
+                    <a href="#">Link 2</a>
+                </li>
+                <li>
+                    <a href="#">Link 3</a>
+                </li>
+                <li>
+                    <a href="#">Link 4</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="itens">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequatur optio debitis natus neque necessitatibus quis omnis enim officia asperiores, cum ratione possimus minima eaque tempora voluptates magnam fuga laborum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloribus, quibusdam numquam velit quod, natus, molestias explicabo voluptas earum inventore voluptate officia placeat aut ipsum aliquam error repellat eius minima?</p>
+        </div>
+        <div class="itens"></div>
+        <div class="itens"></div>
+        <div class="itens"></div>
+
+    </div>
+    
+</body>
+</html>

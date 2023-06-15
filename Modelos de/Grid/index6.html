@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de caixas</title>
+    <style>
+        #link-diferente{
+            display: block;
+        }
+        a.especial{
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: 100px;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        div.especial{
+            background-color: lime;
+
+        }
+
+        div.especial > p > span.especial{
+            background-color: yellow;
+        }
+        
+        imagination{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Link A</a>
+    <a href="#">Link B</a>
+    <a href="#" id="link-diferente">Link block</a>
+    <a href="#">Link C</a>
+    <h1>Título 1</h1>
+    <h1>Título 2</h1>
+
+    <a href="#" class="especial">Link A</a>
+    <a href="#" class="especial">Link B</a>
+    <a href="#" class="especial">Link C</a>
+
+    <br>
+    <img src="imagens/raposa1.jpg" alt="" height="150">
+    
+
+
+    <div class="especial">
+        <h2>Teste</h2>
+        <a href="">Teste</a>
+        <p>Teste</p>
+        <p> <span class="especial">Lorem ipsum dolor</span> sit amet, consectetur adipisicing elit. Provident quos dolore voluptates praesentium quam debitis rem voluptatum velit! Rerum beatae earum odio sunt, rem animi repellat explicabo molestias quasi reiciendis?</p>
+    </div>
+
+    <imagination>
+        Será????
+    </imagination>
+</body>
+</html>
