@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
 :root { /* declaração de variáveis */
-    --cor-cin-esc: #252526;
-    --cor-cin-cla: #E9EBF2;
-    --cor-ama: #F2D888;
-    --cor-mar: #593E1D;
-    --cor-beg: #BFA995;
+    --cor1: #252526;
+    --cor2: #E9EBF2;
+    --cor3: #F2D888;
+    --cor4: #593E1D;
+    --cor5: #BFA995;
 }
 
 * {
