@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de layout</title>
+
+    <style>
+        header{
+            display: grid;
+            grid-template-columns: 150px 1fr 100px;
+        }
+        div{
+            height: 100px;
+            border: 1px solid black;
+        }
+        #titulo{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+        }
+        .noticias-principais{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 15px 100px;
+        }
+        .ultimas-noticias{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin: 15px 75px
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div></div>
+        <div id="titulo">
+            <p>Palavra A</p>
+            <p>Palavra B</p>
+
+        </div>
+        <div></div> 
+    </header>
+
+    <main>
+        <section class="noticias-principais">
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </section>
+
+        <section class="ultimas-noticias">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+    </main>
+    
+</body>
+</html>

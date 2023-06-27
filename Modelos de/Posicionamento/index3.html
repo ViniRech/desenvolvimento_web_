@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        #estatico{
+            
+            position: static;
+            /* Não funciona no static */
+            left: 150px;
+        }
+        #relativo{
+            position: relative;
+            top: -50px;
+            right: 10px;
+            border: 1px solid blue;
+            background-color: rgb(203, 203, 255);
+        }
+        #absoluto{
+            position: absolute;
+            top: 230px;
+            right: 180px;
+            background-color: rgb(255, 175, 175);
+            border: 1px solid red;
+            width: 150px;
+
+        }
+        #fixo{
+            position: fixed;
+            top:30px;
+            background-color: rgb(221, 221, 221);
+            border: 1px solid rgb(32, 32, 32);
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <p id="estatico">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, officiis totam tempore fugit sequi, consequuntur dolores non sapiente neque facere consequatur modi dicta vitae. Voluptas ad minus inventore fugiat excepturi.</p>
+    <p id="relativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla minus dicta! Reprehenderit ad libero debitis accusantium pariatur dolores, ab quas odit sequi reiciendis possimus distinctio consequuntur, eos, corporis impedit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla minus dicta! Reprehenderit ad libero debitis accusantium pariatur dolores, ab quas odit sequi reiciendis possimus distinctio consequuntur, eos, corporis impedit?</p>
+    <p id="absoluto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla minus dicta! Reprehenderit ad libero debitis accusantium pariatur dolores, ab quas odit sequi reiciendis possimus distinctio consequuntur, eos, corporis impedit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla minus dicta! Reprehenderit ad libero debitis accusantium pariatur dolores, ab quas odit sequi reiciendis possimus distinctio consequuntur, eos, corporis impedit?</p>
+    <p id="fixo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla minus dicta! Reprehenderit ad libero debitis accusantium pariatur dolores, ab quas odit sequi reiciendis possimus distinctio consequuntur, eos, corporis impedit?</p>
+
+</body>
+</html>

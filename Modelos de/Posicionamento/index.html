@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #estatico {
+            /* As propriedades de posicionamento não funcionam por padrão*/
+            top: 0px;
+            border: 1px solid blue;
+            background-color: rgb(151, 151, 255);
+        }
+
+        #relativo {
+            position: relative;
+            border: 1px solid red;
+            background-color: rgb(255, 151, 155);
+            left: -50px;
+            top: -100px;
+        }
+
+        #margem-especial {
+            margin-top: -40px;
+            border: 1px solid orange;
+            background-color: rgb(255, 212, 131);
+        }
+        #absoluto{
+            position: absolute;
+            top:-50px;
+            border: 1px solid darkgreen;
+            background-color: rgb(69, 189, 69);
+        }
+        #menu{
+            position: fixed;
+            top: 0px;
+            left: 0;
+            right: 0;
+            background-color: black;
+            border: 1px solid gray;
+            
+        }
+        #menu > a{
+            color: white;
+        }
+
+        #menu-sec{
+            position: sticky;
+            top: 19px;
+            left: 0;
+            right: 0;
+            background-color: rgb(0, 119, 255);
+            border: 1px solid rgb(193, 193, 193);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea vero eos totam aliquam? Nihil sequi nisi neque
+        porro. Accusantium voluptas id at saepe dignissimos odio architecto ab voluptatibus numquam.</p>
+    <p id="estatico">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea vero eos totam aliquam? Nihil
+        sequi nisi neque porro. Accusantium voluptas id at saepe dignissimos odio architecto ab voluptatibus numquam.
+    </p>
+    <p id="relativo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea vero eos totam aliquam? Nihil
+        sequi nisi neque porro. Accusantium voluptas id at saepe dignissimos odio architecto ab voluptatibus numquam.
+    </p>
+    <div id="menu-sec">
+        <a href="">Link A</a>
+        <a href="">Link B</a>
+        <a href="">Link C</a>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea vero eos totam aliquam? Nihil sequi nisi neque
+        porro. Accusantium voluptas id at saepe dignissimos odio architecto ab voluptatibus numquam.</p>
+    <p id="margem-especial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea vero eos totam aliquam?
+        Nihil sequi nisi neque porro. Accusantium voluptas id at saepe dignissimos odio architecto ab voluptatibus
+        numquam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea vero eos totam aliquam? Nihil sequi nisi neque
+        porro. Accusantium voluptas id at saepe dignissimos odio architecto ab voluptatibus numquam.</p>
+    <p id="absoluto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea vero eos totam aliquam? Nihil sequi nisi neque
+        porro. Accusantium voluptas id at saepe dignissimos odio architecto ab voluptatibus numquam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea vero eos totam aliquam? Nihil sequi nisi neque
+        porro. Accusantium voluptas id at saepe dignissimos odio architecto ab voluptatibus numquam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea vero eos totam aliquam? Nihil sequi nisi neque
+        porro. Accusantium voluptas id at saepe dignissimos odio architecto ab voluptatibus numquam.</p>
+
+    <div id="menu">
+        <a href="">Link A</a>
+        <a href="">Link B</a>
+        <a href="">Link C</a>
+    </div>
+
+</body>
+
+</html>
