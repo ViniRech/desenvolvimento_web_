@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo GRID</title>
+    <style>
+        div{
+            border: 1px solid black;
+            min-height: 100px;
+        }
+        header{
+            display: grid;
+            grid-template-columns: 120px 1fr;
+        }
+        #noticias-destaque{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 20px 100px;
+        }
+        #noticias-ultimas{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        #noticias-ultimas-especial{
+            grid-row: 1 / 5;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagens/fox.ico" alt="" height="120">
+        </div>
+        <div>
+            Meu Jornal
+        </div>
+    </header>
+
+    <main>
+        <section id="noticias-destaque">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section id="noticias-ultimas">
+            <div id="noticias-ultimas-especial"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+</body>
+</html>
