@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Float</title>
+    <style>
+        div{
+            border: 1px solid red;
+            min-height: 100px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        #logo{
+            float: left;
+            width: 120px;
+        }
+        #titulo{
+            float: left;
+            width: calc(100% - 120px);
+        }
+        main{
+            margin: 10px 50px;
+        }
+        .destaque > div{
+            width: 33.33%;
+            float: left;
+        }
+        .ultimas > div{
+            width: 25%;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"> </div>
+        <div id="titulo"></div>
+    </header>
+    <main>
+        <section class="destaque">
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </section>
+
+        <section class="ultimas">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </section>
+    </main>
+    
+</body>
+</html>

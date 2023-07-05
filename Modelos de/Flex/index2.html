@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flex</title>
+    <style>
+        header{
+            display: flex;
+        }
+        div, section{
+            min-height: 120px;
+            border: 1px solid red;
+        }
+        #logo{
+            width: 120px;
+        }
+        #titulo{
+            flex-grow: 1;
+        }
+        main{
+            display: flex;
+        }
+        #destaque{
+            flex-grow: 2;
+            height: 510px;
+        }
+        #ultimas{
+            flex-grow: 1;
+        }
+        #ultimas > div{
+            height: 100px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"> LOGO</div>
+        <div id="titulo"> MEU SITE</div>
+    </header>
+    <main>
+        <section id="destaque">
+            destaques
+        </section>
+        <section id="ultimas">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+    
+</body>
+</html>
