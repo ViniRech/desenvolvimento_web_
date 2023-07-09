@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Justify-content: space-evenly */
+        .grid-container-space-evenly {
+            display: grid;
+            justify-content: space-evenly;
+            grid-template-columns: 50px 50px 50px;
+            /*Make the grid smaller than the container*/
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-space-evenly div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Justify-content: space-around */
+        .grid-container-space-around {
+            display: grid;
+            justify-content: space-around;
+            grid-template-columns: 50px 50px 50px;
+            /*Make the grid smaller than the container*/
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-space-around div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Justify-content: space-between */
+        .grid-container-space-between {
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: 50px 50px 50px;
+            /*Make the grid smaller than the container*/
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-space-between div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Justify-content: center */
+        .grid-container-center {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 50px 50px 50px;
+            /*Make the grid smaller than the container*/
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-center div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Justify-content: start */
+        .grid-container-start {
+            display: grid;
+            justify-content: start;
+            grid-template-columns: 50px 50px 50px;
+            /*Make the grid smaller than the container*/
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-start div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Justify-content: end */
+        .grid-container-end {
+            display: grid;
+            justify-content: end;
+            grid-template-columns: 50px 50px 50px;
+            /*Make the grid smaller than the container*/
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-end div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>The justify-content Property</h1>
+
+    <p>Use o <em>justify-content</em> property para alinhar o grid dentro do container.</p>
+
+    <p>O valor "space-evenly" dará às colunas medida igual de espaço entre e em volta deles:</p>
+
+    <div class="grid-container-space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O valor "space-around" dará às colunas medida igual de espaço em volta deles:</p>
+
+    <div class="grid-container-space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O valor "space-between" dará às colunas medida igual de espaço entre eles:</p>
+
+    <div class="grid-container-space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O valor "center" alinhará o grid no meio do container:</p>
+
+    <div class="grid-container-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O value "start" alinhará o grid ao começo do container:</p>
+
+    <div class="grid-container-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O valor "end" alinhará o grid ao fim do container:</p>
+
+    <div class="grid-container-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+</body>
+
+</html>

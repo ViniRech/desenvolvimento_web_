@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Modelo padrão */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Modelo com column gap alterado */
+        .grid-container-column-gap {
+            display: grid;
+            column-gap: 50px;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-item-column-gap {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Modelo com row gap alterado */
+        .grid-container-row-gap {
+            display: grid;
+            row-gap: 50px;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-item-row-gap {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Modelo com column e row gap alterados */
+        .grid-container-gap {
+            display: grid;
+            gap: 50px 100px;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-item-gap {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid Elementos</h1>
+
+    <p>Um Grid Layout deve ter um elemento pai com a propriedade <em>display</em> setada para
+        <em>grid</em> ou <em>inline-grid</em>.
+    </p>
+
+    <p>Direcione os elementos filhos do grid container automaticamente torna-se grid items.</p>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <h1>The column-gap Property</h1>
+
+    <p>Use o <em>column-gap</em> property para ajustar o espaço entre as colunas:</p>
+
+    <div class="grid-container-column-gap">
+        <div class="grid-item-column-gap">1</div>
+        <div class="grid-item-column-gap">2</div>
+        <div class="grid-item-column-gap">3</div>
+        <div class="grid-item-column-gap">4</div>
+        <div class="grid-item-column-gap">5</div>
+        <div class="grid-item-column-gap">6</div>
+        <div class="grid-item-column-gap">7</div>
+        <div class="grid-item-column-gap">8</div>
+        <div class="grid-item-column-gap">9</div>
+    </div>
+
+    <h1>The row-gap Property</h1>
+
+    <p>Use o <em>row-gap</em> property para ajustar o espaço entre as linhas:</p>
+
+    <div class="grid-container-row-gap">
+        <div class="grid-item-row-gap">1</div>
+        <div class="grid-item-row-gap">2</div>
+        <div class="grid-item-row-gap">3</div>
+        <div class="grid-item-row-gap">4</div>
+        <div class="grid-item-row-gap">5</div>
+        <div class="grid-item-row-gap">6</div>
+        <div class="grid-item-row-gap">7</div>
+        <div class="grid-item-row-gap">8</div>
+        <div class="grid-item-row-gap">9</div>
+    </div>
+
+    <h1>The gap Property</h1>
+
+    <p>Use o <em>gap</em> shorthand property para ajustar o espaço entre as colunas e linhas.</p>
+
+    <div class="grid-container-gap">
+        <div class="grid-item-gap">1</div>
+        <div class="grid-item-gap">2</div>
+        <div class="grid-item-gap">3</div>
+        <div class="grid-item-gap">4</div>
+        <div class="grid-item-gap">5</div>
+        <div class="grid-item-gap">6</div>
+        <div class="grid-item-gap">7</div>
+        <div class="grid-item-gap">8</div>
+        <div class="grid-item-gap">9</div>
+    </div>
+
+</body>
+
+</html>

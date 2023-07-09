@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Align-content: center */
+        .grid-container-center {
+            display: grid;
+            height: 400px;
+            align-content: center;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-center div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Align-content: space-evenly */
+        .grid-container-space-evenly {
+            display: grid;
+            height: 400px;
+            align-content: space-evenly;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-space-evenly div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Align-content: space-around */
+        .grid-container-space-around {
+            display: grid;
+            height: 400px;
+            align-content: space-around;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-space-around div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Align-content: space-between */
+        .grid-container-space-between {
+            display: grid;
+            height: 400px;
+            align-content: space-between;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-space-between div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Align-content: start */
+        .grid-container-start {
+            display: grid;
+            height: 400px;
+            align-content: start;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-start div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Align-content: end */
+        .grid-container-end {
+            display: grid;
+            height: 400px;
+            align-content: end;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container-end div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The align-content Property</h1>
+
+    <p>Use o <em>align-content</em> property para alinhar verticalmente o grid dentro do container.</p>
+
+    <p>O valor "center" alinhará as linhas ao centro do container:</p>
+
+    <div class="grid-container-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O valor "space-evenly" dará às linhas medida igual de espaço entre e em volta deles:</p>
+
+    <div class="grid-container-space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O valor "space-around" dará às linhas medida igual de espaço em volta deles:</p>
+
+    <div class="grid-container-space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O valor "space-between" dará às linhas medida igual de espaço entre eles:</p>
+
+    <div class="grid-container-space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O valor "start" alinhará as linhas ao comelo do container:</p>
+
+    <div class="grid-container-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <p>O valor "end" alinhará as linhas ao fim do container:</p>
+
+    <div class="grid-container-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+</body>
+
+</html>
