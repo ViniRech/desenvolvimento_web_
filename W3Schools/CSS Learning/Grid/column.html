@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Usando as linhas */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .item1-line {
+            grid-column: 1 / 5;
+        }
+
+        /* Usando o span */
+        .item1-span {
+            grid-column: 1 / span 3;
+        }
+
+        .item2-span {
+            grid-column: 2 / span 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The grid-column Property</h1>
+
+    <p>Use o <em>grid-column</em> property para especificar onde posicionar um item.</p>
+    <p>Item1 começará na coluna 1 e terminará antes da coluna 5:</p>
+
+    <div class="grid-container">
+        <div class="item1-line">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+    </div>
+
+    <p>Item1 começará na linha da coluna 1 e espandirá 3 colunas:</p>
+
+    <div class="grid-container">
+        <div class="item1-span">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+        <div class="item16">16</div>
+    </div>
+
+    <p>Item2 começará na linha da coluna 2 e espanadirá 3 colunas:</p>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2-span">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+        <div class="item16">16</div>
+    </div>
+
+</body>
+
+</html>
