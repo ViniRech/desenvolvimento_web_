@@ -29,8 +29,8 @@
 }
 
 .cabecalho-imagem {
-    position: relative;
-    left: 4px;
+    margin: auto;
+    display: block;
 }
 
 .cabecalho-imagem-texto {
