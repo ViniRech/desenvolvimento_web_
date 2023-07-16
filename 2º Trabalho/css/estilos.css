@@ -114,28 +114,29 @@
 }
 
 .aside {
-    justify-self: left;
+    justify-self: center;
     border-radius: 15px;
     border: 1px solid var(--cor-preto);
     max-width: 500px;
 }
 
-.aside-titulo {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 37px;
+.conteudo-calendario {
+    grid-area: 1 / 2 / 4 / 3; 
+    display: inline-grid;
+    grid-template-rows: 10% 33.5% 6.4% 50.1%; 
 }
 
-.conteudo-calendario {
-    grid-area: 1 / 2 / 4 / 3;  
+.calendario-titulo {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
 }
 
 .calendario-tabela {
     display: flex; /* Apenas para centralizar */
     justify-content: center;
     text-align: center;
-    margin-top: 41px;
 }
 
 .calendario-tabela-titulo {
@@ -187,7 +188,6 @@
     font-size: 12px;
     font-weight: 400;
     text-align: center;
-    margin-top: 42px;
 }
 
 .conteudo-calendario-span {
@@ -196,11 +196,11 @@
 
 .calendario-lista {
     list-style-type: none;
-    margin: 28px 0 0 33px;
+    margin-left: 10%;
 }
 
 .calendario-lista-item {
-    padding: 15px;
+    padding: 10px;
     font-size: 12px;
     font-weight: 300;
     display: flex; /* Apenas para alinhar */
@@ -216,16 +216,28 @@
 
 .conteudo-comemoracao {
     grid-area: 4 / 2 / 7 / 3;
+    display: inline-grid;
+    grid-template-rows: 10% 30% 30% 30%;
+}
+
+.comemoracao-titulo {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+}
+
+.comemoracao-artigo {
+    margin: 0 15%;
+    align-self: center;
 }
 
 .comemoracao-data {
-    margin: 21px 49px 21px;
     font-size: 14px;
     font-weight: 600;
 }
 
 .comemoracao-texto {
-    margin: 21px 49px 21px;
     font-size: 13px;
     font-weight: 300;
 }
@@ -233,22 +245,27 @@
 .conteudo-podcasts {
     grid-area: 7 / 2 / 10 / 3;
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 10% 30% 30% 30%;
     justify-content: center;
-    gap: 34px;
+    gap: 4.5%;
+}
+
+.podcasts-titulo {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
 }
 
 .podcasts-podcast {
-    width: 273px;
-    height: 184px;
     border-radius: 13px;
     border: 1px solid var(--cor-preto);
     display: grid;
     grid-column: 50% 50%;
-    margin: 0 24px 0;
+    margin: 0 7.5%;
 }
 
-.podcasts-titulo {
+.podcasts-podcast-titulo {
     grid-column: 1 / 3;
     font-size: 14px;
     font-weight: 600;
@@ -256,20 +273,18 @@
     align-self: center;
 }
 
-.podcasts-imagem {
-    width: 115px;
-    height: 115px;
-    border-radius: 13px;
-    align-self: center;
-    margin-right: 27px;
-}
-
-.podcasts-link {
+.podcasts-podcast-link {
     color: var(--cor-vermelho);
     font-size: 14px;
     font-weight: 600;
     align-self: center;
-    margin-left: 24px;
+}
+
+.podcasts-podcast-imagem {
+    width: 70%;
+    height: auto;
+    border-radius: 13px;
+    align-self: center;
 }
 
 .conteudo-noticia {
