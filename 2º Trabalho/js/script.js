@@ -1,4 +1,4 @@
-function diaDeHoje(diadehoje) {
+window.onload = function() {
     const data = new Date();
 
     let mes = (data.getMonth() === 0) ? ` de janeiro de `
@@ -13,7 +13,8 @@ function diaDeHoje(diadehoje) {
     : (data.getMonth() === 9) ? ` de outubro de `
     : (data.getMonth() === 10) ? ` de novembro de `
     : ` de dezembro de `;
-    
+
     let dataAtual = data.getDate() + mes + data.getFullYear();
-    document.write(dataAtual);
+    document.querySelector(".cabecalho-data").textContent = dataAtual;
 }
+
