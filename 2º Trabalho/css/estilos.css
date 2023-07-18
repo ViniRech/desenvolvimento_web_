@@ -380,4 +380,13 @@
 }
 
 /* Páginas Secundárias */
+.imagem {
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: auto;
+}
 
+.container {
+    
+}
