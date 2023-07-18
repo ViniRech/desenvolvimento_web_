@@ -388,5 +388,100 @@
 }
 
 .container {
-    
+    max-width: 70%;
+    margin: 10% auto;
+}
+
+.container-titulo {
+    color: var(--cor-azul);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.container-subtitulo {
+    color: var(--cor-azul);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 4% 0;
+}
+
+.container-descricao {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 4%;
+}
+
+.container-paragrafo-padrao {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 4em;
+    margin: 4% 0;
+}
+
+.container-citacao {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 23%;
+}
+
+.container-citacao:hover {
+    color: var(--cor-azul);
+}
+
+.container-coluna {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.coluna-imagem {
+    margin: auto;
+    display: block;
+    width: 245px;
+    height: auto;
+}
+
+.coluna-imagem-descricao {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+.direita {
+    grid-column: 2 / 3;
+}
+
+.coluna-audios-esquerda {
+    text-align: left;
+    margin-right: 2%;
+}
+
+.coluna-audios-direita {
+    text-align: right;
+    margin-left: 2%;
+}
+
+.audios-titulo {
+    color: var(--cor-azul);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.audios-audio {
+
+}
+
+.audios-letra {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.coluna-musicas-esquerda {
+    text-align: left;
+}
+
+.coluna-musicas-direita {
+    text-align: right;
 }
