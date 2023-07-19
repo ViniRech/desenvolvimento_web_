@@ -516,6 +516,13 @@
     object-fit: cover;
 }
 
+
+.container-audio {
+    margin: auto;
+    display: block;
+    width: 80%;
+    
+}
 /* .container-video {
 
 } */
