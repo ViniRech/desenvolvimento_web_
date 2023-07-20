@@ -18,3 +18,14 @@ window.onload = function() {
     document.querySelector(".cabecalho-data").textContent = dataAtual;
 }
 
+function alertaCabecalho() {
+    alert("Em Manutenção!");
+}
+
+function alertaContaWhatsApp() {
+    alert("Estou ocupado no momento. Volte mais tarde.");
+}
+
+function alertaContaLinkedin() {
+    alert("Já fui contratado!");
+}

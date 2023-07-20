@@ -3,3 +3,7 @@ window.onload = function() {
     document.getElementById("resultado").textContent = resultado;
 }
 
+function alerta() {
+    alert(`Sucesso!`);
+}
+
