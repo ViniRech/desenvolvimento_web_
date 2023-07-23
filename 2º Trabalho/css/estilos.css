@@ -29,21 +29,27 @@
     background-color: var(--cor-vermelho);
 }
 
+.cabecalho-botao-menu {
+    display: none;
+}
+
 .cabecalho-imagem {
     margin: auto;
     display: block;
+    width: 70%;
+    height: auto;
 }
 
 .cabecalho-imagem-texto {
     color: var(--cor-branco);
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .cabecalho-titulo {
     color: var(--cor-branco);
     font-family: 'Roboto Slab', serif;
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -52,13 +58,13 @@
 .cabecalho-data {
     text-align: center;
     color: var(--cor-branco);
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 #cabecalho-botao {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 1rem;
     background-color: var(--cor-branco);
     padding: 10px 30px;
     border-radius: 10px;
@@ -77,14 +83,14 @@
     justify-items: center;
     align-items: center;
     padding: 20px;
-    margin-bottom: 120px;
+    margin-bottom: 15%;
     color: var(--cor-branco);
     background-color: var(--cor-azul);
 }
 
 .navegacao-noticia {
-    width: 226px;
-    font-size: 12px;
+    max-width: 90%;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--cor-branco);
 }
@@ -322,7 +328,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 0 7.5%;
-    max-height: 185px;
+    max-height: 85%;
 }
 
 .podcasts-podcast-titulo {
@@ -549,4 +555,42 @@
     margin: auto;
     display: block;
     width: 100%;
+}
+
+@media (min-width: 1600px) {
+    .cabecalho-titulo {
+        font-size: 4vw;
+    }
+
+    .cabecalho-data, .cabecalho-imagem-texto, #cabecalho-botao {
+        font-size: 1.5vw;
+    }
+
+    .navegacao-noticia {
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width: 760px) {
+    .navegacao, .cabecalho-imagem, .cabecalho-imagem-texto, #cabecalho-botao {
+        display: none;
+    }
+
+    .cabecalho {
+        margin-bottom: 20%;
+        justify-content: space-between;
+    }
+
+    .cabecalho-titulo {
+        font-size: 2rem;
+    }
+
+    .cabecalho-data {
+        justify-self: end;
+        font-size: 0.8rem;
+    }
+
+    .cabecalho-botao-menu {
+        display: block;
+    }
 }
