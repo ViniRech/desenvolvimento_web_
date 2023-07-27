@@ -199,6 +199,7 @@
     display: grid;
     grid-template-rows: 8% 32% 6% 48%; 
     row-gap: 2%;
+    width: 100%;
 }
 
 .calendario-titulo {
@@ -222,6 +223,14 @@
     font-size: 1.3vw;
     font-weight: 400;
     padding: 0.7vw;
+    justify-self: center;
+}
+
+.lua-cheia {
+    background-image: url("../img/lua-cheia.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: center;
 }
 
 /* .lua-cheia {
