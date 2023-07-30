@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout responsivo</title>
+    <style>
+        #logo > img{
+            height: 100px;
+            width: 100px;
+        }
+        header{
+            display: grid;
+            grid-template-columns: 100px 1fr;
+        }
+        #titulo{
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        @media (max-width: 360px) {
+            #logo{
+                display: none;
+            }
+
+            header{
+                grid-template-columns: 1fr;
+                background-image: url("imagens/fox.ico");
+                background-repeat: no-repeat;
+                background-size: 50px 50px;
+                background-position: center center;
+            }
+            
+        }
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        main > div{
+            border: 1px solid black;
+            min-height: 100px;
+        }
+        @media (max-width: 800px) {
+            main{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 400px){
+            main{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagens/fox.ico" alt="">
+        </div>
+        <div id="titulo">
+            Meu jornal
+        </div>
+    </header>
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+    
+</body>
+</html>

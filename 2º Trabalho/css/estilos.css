@@ -223,44 +223,44 @@
     font-size: 1.3vw;
     font-weight: 400;
     padding: 0.7vw;
-    justify-self: center;
+    text-align: center;
 }
 
 .lua-cheia {
     background-image: url("../img/lua-cheia.png");
     background-repeat: no-repeat;
-    background-size: 40px 40px;
+    background-size: 60%;
     background-position: center;
 }
 
-/* .lua-cheia {
-    border: 1px solid var(--cor-azul);
-    border-radius: 100%;
-}
-
 .lua-crescente {
-    background-image: url("img/meia-lua.png");
-    background-attachment: fixed;
-    object-fit: cover;
+    background-image: url("../img/lua-crescente.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
 }
 
 .lua-nova {
-    background-color: var(--cor-azul);
-    border: 1px solid var(--cor-azul);
-    border-radius: 100%;
+    background-image: url("../img/lua-nova.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
 }
 
 .lua-minguante {
-
+    background-image: url("../img/lua-minguante.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
 }
 
 .data-comemorativa {
-    padding: -5px;
-    border: 1px solid var(--cor-cinza);
-    border-radius: 4px;
-    background-color: var(--cor-cinza);
-    color: var(--cor-branco);
-} */
+    background-image: url("../img/quadrado-cinza.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--cor-branco)
+}
 
 .calendario-paragrafo {
     font-size: 1.2vw;
@@ -601,5 +601,94 @@
 
     .cabecalho-botao-menu {
         display: block;
+    }
+}
+
+@media (max-width: 425px) {
+    .conteudo-index {
+        display: grid;
+        grid-template-columns: 80%;
+        row-gap: 1%;
+    }
+
+    .conteudo-index-calendario {
+        grid-area: 1 / 1 / 4 / 2;
+        height: 400px;
+    }
+
+    .calendario-titulo {
+        font-size: 1.8vw;
+    }
+
+    .calendario-paragrafo {
+        font-size: 1.6vw;
+    }
+
+    .calendario-lista-imagem {
+        width: 3vw;
+    }
+
+    .calendario-lista-item {
+        font-size: 1.5vw;
+    }
+
+    .lua-cheia, .lua-crescente, .lua-minguante, .lua-nova, .data-comemorativa {
+        background-size: 40%;
+    }
+
+    .conteudo-index-comemoracao {
+        grid-area: 4 / 1 / 7 / 2;
+        height: 200px;
+    }
+
+    .comemoracao-titulo {
+        font-size: 1.8vw;
+    }
+
+    .comemoracao-artigo {
+        font-size: 1.4vw;
+    }
+
+    .comemoracao-data {
+        font-size: 1.5vw;
+    }
+
+    .conteudo-index-podcasts {
+        grid-area: 7 / 1 / 10 / 2;
+        height: 500px;
+    }
+
+    .podcasts-titulo {
+        font-size: 1.8vw;
+    }
+
+    .podcasts-podcast-titulo {
+        font-size: 1.8vw;
+    }
+
+    .podcasts-podcast-link {
+        font-size: 1.6vw;
+    }
+
+    .conteudo-index-noticia {
+        height: 100px;
+        width: 100%;
+    }
+
+    .noticia-imagem {
+        width: 25vw;
+        height: 16vw;
+    }
+
+    .noticia-descricao {
+        font-size: 1.4vw;
+    }
+
+    .noticia-titulo {
+        font-size: 1.5vw;
+    }
+
+    .rodape {
+        margin-top: 20%;
     }
 }

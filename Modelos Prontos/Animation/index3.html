@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação</title>
+  <style>
+
+    div{
+      background-color: blue;
+      height: 100px;
+      width: 100px;
+      animation-name: mudanca-cor;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes mudanca-cor {
+      0%{
+        background-color: blue;
+        height: 150px;
+      }
+      10%{
+        background-color: yellow;
+        height: 200px;
+      }
+      50%{
+        background-color: red;
+        height: 150px;
+      }
+      100%{
+        background-color: lavenderblush;
+        height: 100px;
+      }
+    }
+    main{
+      background-color: aqua;
+      border: 1px solid black;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: andar;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes andar {
+      0%{
+        top: 100px;
+        left: 0px;
+      }
+      25%{
+        top: 100px;
+        left: 500px;
+      }
+      50%{
+        top: 300px;
+        left: 500px;
+      }
+      75%{
+        top: 300px;
+        left: 0px
+      }
+      100%{
+        top: 100px;
+        left: 0px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+
+  </div>
+  <main>
+
+  </main>
+  
+</body>
+</html>

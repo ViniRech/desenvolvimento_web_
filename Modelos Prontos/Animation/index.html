@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation - Exemplo 01</title>
+    <style>
+        #caixa1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: caixa-animada1 4s alternate infinite;
+        }
+
+        @keyframes caixa-animada1 {
+            from{
+                background-color: blue;
+            }
+            to{
+                background-color: red;
+            }
+        }
+
+
+        #caixa2{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: caixa-animada2 4s alternate infinite;
+        }
+
+        @keyframes caixa-animada2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 500px;
+            }
+            50%{
+                top: 200px;
+                left: 500px;
+            }
+            75%{
+                top: 200px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="caixa1">
+
+    </div>
+    <div id="caixa2">
+
+    </div>
+    
+</body>
+</html>
