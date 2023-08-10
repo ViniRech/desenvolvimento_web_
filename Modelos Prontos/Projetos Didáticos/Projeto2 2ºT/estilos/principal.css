@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+:root{
+    --cor-header: #EA522A;
+    --cor-header-text: #BAE3E3;
+
+    --cor-nav: #253540;
+    --cor-nav-text: #F8FFF4;
+    
+    --cor-nav-hover: #d3e7f5;
+    --cor-nav-hover-text: #686828;
+    --fonte-nav: 'Courier New', Courier, monospace;
+}
+header{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--cor-header);
+}
+
+#logo > img{
+    width: 120px;
+    animation: roda 8s alternate infinite;
+}
+#titulo > h1 {
+    font-size: 42px;
+    color: var(--cor-header-text);
+}
+
+
+nav{
+    background-color: var(--cor-nav);
+}
+nav > a{
+    color: var(--cor-nav-text);
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 30px;
+
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    /*font-family: var(--fonte-nav);*/
+}
+nav > a:hover{
+    background-color: var(--cor-nav-hover);
+    color: var(--cor-nav-hover-text);
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+}
+
+@keyframes roda {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+#destaque > img, #destaque > p{
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+#destaque > p{
+    position: relative;
+    top: -77px;
+    background-color: var(--cor-nav);
+    color: var(--cor-nav-text);
+    font-size: 24px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+main img, main p{
+    width: 100%;
+
+}
+main p{
+    position: relative;
+    top: -50px;
+    background-color: var(--cor-nav);
+    color: var(--cor-nav-text);
+}
+#img-especial{
+    border: 5px solid rebeccapurple;
+}
+
+footer{
+    background-color: var(--cor-nav);
+    color: var(--cor-nav-text);
+    min-height: 100px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    #logo > img{
+        width: 80px;
+    }
+    #titulo > h1 {
+        font-size: 30px;
+    }
+    header{
+        grid-template-columns: 110px 1fr;
+    }
+    nav > a {
+        font-size: 20px;
+    }
+}
+@media (max-width: 430px) {
+    #destaque > img, #destaque > p{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px) {
+    #logo{
+        display: none;
+    }
+    header{
+        grid-template-columns: 1fr;
+    }
+    #titulo > h1 {
+        font-size: 20px;
+    }
+    nav > a {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+#principal{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
+
+#principal > aside{
+    background-image: url("../Imagens/propagandas/Patrocinador1.png");
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    animation: muda_propaganda 8s infinite alternate;
+}
+@keyframes muda_propaganda {
+    0%{
+        background-image: url("../Imagens/propagandas/Patrocinador1.png");
+    }
+    100%{
+        background-image: url("../Imagens/propagandas/Patrocinador2.png");
+    }
+}
+
+
+
+/* 
+header{
+    background-color: var(--cor-header);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10% 10% 0 0;
+}
+#logo > img {
+    height: 100px;
+    margin: 10px 10px;
+}
+#titulo > h1{
+    color: var(--cor-header-text);
+}
+
+nav{
+    background-color: var(--cor-nav);
+    border-radius: 0 0 10% 10%;
+    border-top: 1px solid white;
+}
+nav > a{
+    display: inline-block;
+    color: var(--cor-nav-text);
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+nav > a:hover{
+    background-color: var(--cor-nav-hover);
+    color: var(--cor-nav-hover-text);
+    transform: rotate(-10deg);
+    transition: all 0.5s ease-out;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    margin-top: 20px;
+}
+
+#propagandas{
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+
+    animation: muda-propaganda 5s infinite alternate;
+
+
+}
+@keyframes muda-propaganda {
+    0%{
+        background-image: url('../Imagens/propagandas/Patrocinador1.png');
+    }
+    100%{
+        background-image: url('../Imagens/propagandas/Patrocinador2.png');
+    }
+}
+
+#destaque img{
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    display: block;
+}
+#destaque p{
+    margin: auto;
+    width: 500px;
+    background-color: var(--cor-nav);
+    color: var(--cor-nav-text);
+    padding: 10px 0px;
+    position: relative;
+    top: -30px;
+    z-index: 1;
+    
+}
+#noticias{
+    margin: 10px 50px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+#noticias img{
+    width: 100%;
+}
+#noticias p{
+    background-color: var(--cor-nav);
+    color: var(--cor-nav-text);
+    padding: 10px 0px;
+    position: relative;
+    top: -30px;
+    z-index: 1;
+    text-align: center;
+} */

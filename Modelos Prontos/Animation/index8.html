@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animações</title>
+  <style>
+    .banner{
+      
+      background-image: url("imagens/fox.ico");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 150px;
+      min-height: 200px;
+      animation-name: troca_imagem;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes troca_imagem {
+      0%{
+        background-image: url("imagens/fox.ico");
+      }
+      25%{
+        background-image: url("imagens/nuvem.ico");
+      }
+      75%{
+        background-image: url("imagens/raposa1.jpg");
+      }
+      100%{
+        background-image: url("imagens/fox.ico");
+      }
+    }
+
+    #bola{
+      background-color: orange;
+      border: 1px solid red;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      position: absolute;
+      animation-name: anda_bola;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+
+    }
+    @keyframes anda_bola {
+      0%{
+        top: 0px;
+        left: 0px;
+      }
+      25%{
+        top: 0px;
+        left: 500px;
+      }
+      50%{
+        top: 300px;
+        left: 500px;
+      }
+      75%{
+        top: 300px;
+        left: 0px;
+      }
+      100%{
+        top: 0px;
+        left: 0px;
+      }
+      
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="banner">
+
+  </div>
+  <div id="bola">
+
+  </div>
+
+</body>
+</html>

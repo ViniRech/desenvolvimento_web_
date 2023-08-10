@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+:root{
+    --cor-header: #EA522A;
+    --cor-header-text: #BAE3E3;
+
+    --cor-nav: #253540;
+    --cor-nav-text: #F8FFF4;
+    
+    --cor-nav-hover: #d3e7f5;
+    --cor-nav-hover-text: #686828;
+    --fonte-nav: 'Courier New', Courier, monospace;
+}
+
+header{
+    background-color: var(--cor-header);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-items: center;
+    align-items: center;
+}
+#logo > img{
+    width: 120px;
+    animation: gira-img 6s infinite alternate;
+}
+@keyframes gira-img {
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    100%{
+        transform: rotate(360deg) scale(0.5);
+    }
+}
+
+#titulo > h1 {
+    font-size: 42px;
+    color: var(--cor-header-text);
+}
+
+nav{
+    background-color: var(--cor-nav);
+}
+nav > a{
+    color: var(--cor-nav-text);
+    font-size: 32px;
+    text-decoration: none;
+    margin: 10px 30px 10px 10px;
+    
+    padding: 10px;
+    display: inline-block;
+}
+nav > a:hover{
+    background-color: var(--cor-nav-hover);
+    color: var(--cor-nav-hover-text);
+    transform: rotate(-180deg);
+    transition: all 0.5s ease-in-out;
+
+}
+
+#destaque > img, #destaque > p{
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+#destaque > p{
+    position: relative;
+    font-size: 20px;
+    top: -83px;
+    background-color: var(--cor-nav);
+    color: var(--cor-nav-text);
+}
+#principal{
+    display: grid;
+    grid-template-columns: 1fr 120px;
+}
+#principal > aside{
+    background-image: url("../Imagens/propagandas/Patrocinador1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    min-height: 150px;
+    animation: muda-propaganda 8s infinite alternate;
+}
+@keyframes muda-propaganda {
+    0%{
+        background-image: url("../Imagens/propagandas/Patrocinador1.png");
+    }
+    100%{
+        background-image: url("../Imagens/propagandas/Patrocinador2.png");
+    }
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+main img{
+    width: 100%;
+}
+main p{
+    background-color: var(--cor-nav-hover);
+    color: var(--cor-nav-hover-text);
+    margin-top: -5px;
+}
+footer > p{
+    background-color: var(--cor-nav);
+    color: var(--cor-nav-text);
+}
+
+@media (max-width: 800px) {
+    #logo > img{
+        width: 80px;
+    }
+    #titulo > h1 {
+        font-size: 30px;
+    }
+    header{
+        grid-template-columns: 110px 1fr;
+    }
+    nav > a{
+        font-size: 20px;
+        margin: 7px 20px 7px 7px;
+        padding: 7px;
+    }
+    #destaque > img, #destaque > p{
+        width: 300px;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 440px){
+    #logo{
+        display: none;
+    }
+
+    header{
+        grid-template-columns: 1fr;
+    }
+
+    #titulo > h1 {
+        font-size: 20px;
+    }
+    nav > a{
+        font-size: 14px;
+        margin: 5px 10px 5px 5px;
+        padding: 5px;
+    }
+    #destaque > img, #destaque > p{
+        width: 100%;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* 
+header{
+    background-color: var(--cor-header);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10% 10% 0 0;
+}
+#logo > img {
+    height: 100px;
+    margin: 10px 10px;
+}
+#titulo > h1{
+    color: var(--cor-header-text);
+}
+
+nav{
+    background-color: var(--cor-nav);
+    border-radius: 0 0 10% 10%;
+    border-top: 1px solid white;
+}
+nav > a{
+    display: inline-block;
+    color: var(--cor-nav-text);
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+nav > a:hover{
+    background-color: var(--cor-nav-hover);
+    color: var(--cor-nav-hover-text);
+    transform: rotate(-10deg);
+    transition: all 0.5s ease-out;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    margin-top: 20px;
+}
+
+#propagandas{
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+
+    animation: muda-propaganda 5s infinite alternate;
+
+
+}
+@keyframes muda-propaganda {
+    0%{
+        background-image: url('../Imagens/propagandas/Patrocinador1.png');
+    }
+    100%{
+        background-image: url('../Imagens/propagandas/Patrocinador2.png');
+    }
+}
+
+#destaque img{
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    display: block;
+}
+#destaque p{
+    margin: auto;
+    width: 500px;
+    background-color: var(--cor-nav);
+    color: var(--cor-nav-text);
+    padding: 10px 0px;
+    position: relative;
+    top: -30px;
+    z-index: 1;
+    
+}
+#noticias{
+    margin: 10px 50px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+#noticias img{
+    width: 100%;
+}
+#noticias p{
+    background-color: var(--cor-nav);
+    color: var(--cor-nav-text);
+    padding: 10px 0px;
+    position: relative;
+    top: -30px;
+    z-index: 1;
+    text-align: center;
+} */
