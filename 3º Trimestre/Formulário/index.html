@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Escolar</title>
+</head>
+
+<body>
+
+    <script src="javaScript.js"></script>
+
+    <h1 class="titulo">Formulário Escolar</h1>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome" >Nome social:</label>
+                <input type="text" size="100" name="nome-social" id="nome">
+            </div>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+            <div>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+            <div>
+                <label for="fone">Número de telefone:</label>
+                <input type="tel" id="fone" name="fone" placeholder="(99) 99999-9999"
+                    pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}" required maxlength="15" onkeyup="handlePhone(event)">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="usuario">Nome de usuário:</label>
+                <input type="password" name="usuario" id="usuario">
+            </div>
+            <div>
+                <label for="senha">Senha de cadastro:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+            <div>
+                <label for="confir-senha">Confirmar senha:</label>
+                <input type="password" name="confir-senha" id="confir-senha">
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="radio" name="optativa" id="adm">
+            <label for="adm">Administração</label>
+            <input type="radio" name="optativa" id="ac">
+            <label for="ac">Artes Cênicas</label>
+            <input type="radio" name="optativa" id="robotica">
+            <label for="robotica">Robótica</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="meio-transporte" id="carro">
+            <label for="carro">Carro</label>
+            <input type="checkbox" name="meio-transporte" id="moto">
+            <label for="moto">Moto</label>
+            <input type="checkbox" name="meio-transporte" id="onibus">
+            <label for="onibus">Ônibus</label>
+            <input type="checkbox" name="meio-transporte" id="van">
+            <label for="van">Van</label>
+        </div>
+
+        <div>
+            <label for="ensino">Escolaridade:</label>
+            <select name="ensino" id="ensino">
+                <option value="fundamental">Fundamental</option>
+                <option value="medio">Médio</option>
+                <option value="medio-integrado">Médio Integrado</option>
+                <option value="graduacao">Graduação</option>
+                <option value="pos">Pós-Graduação</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="doc">Comprovante de escolaridade:</label>
+            <input type="file" name="doc" id="doc">
+        </div>
+
+        <div>
+            <label for="cor">Cor esportiva:</label>
+            <input type="color" name="cor" id="cor">
+        </div>
+
+        <div>
+            <label for="nota">Nota para o campus:</label>
+            <input type="number" name="nota" id="nota" min="0" max="10">
+        </div>
+        <div><label for="critica">Deixe seu cometário sobre o campus:</label></div>
+        <div><textarea name="critica" id="critica" cols="30" rows="10"></textarea></div>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetar">
+    </form>
+
+</body>
+
+</html>
