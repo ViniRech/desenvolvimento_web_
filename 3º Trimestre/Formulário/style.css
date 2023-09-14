@@ -1,9 +1,42 @@
 @charset "UTF-8";
 
-input {
-    display: block;
-    height: 22px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 4px 10px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  padding: 30px 0 0;
+  text-align: center;
+}
+
+.formulario {
+  max-width: 60%;
+  margin: 30px auto 10%; 
+}
+
+.campo-dados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 3px solid black;
+}
+
+.coluna {
+  padding: 40px;
+}
+
+.divisao {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dado {
+  display: block;
+  height: 22px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
