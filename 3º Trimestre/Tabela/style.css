@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.tabela {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+  }
+  
+.tabela-celula {
+    background-color: #E4D3FF;
+    text-align: center;
+    border: 3px solid white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .tabela-titulo {
+    text-align: center;
+    border: 3px solid white;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+.tabela-titulo {
+    padding: 12px 0;
+    background-color: #CDB7F5;
+    color: #33234D;
+}
