@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    padding: 30px 0 0;
+    text-align: center;
+}
+
+.formulario {
+    max-width: 210px;
+    margin: 30px auto 10%;
+}
+
+.divisoria {
+    padding: 10px;
+}
+
+.divisoria-botao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 10px;
+}
+input[type="button"]{
+    width: fit-content;
+}
+
+.input {
+    display: block;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
