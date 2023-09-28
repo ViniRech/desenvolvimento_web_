@@ -6,6 +6,7 @@ function click_calcular() {
     if (valorA == "") alert("Informe o valor A");
     else if (valorB == "") alert("Informe o valor B");
     else if (valorC == "") alert("Informe o valor C");
+
     else {
         let delta = valorB ** 2 - 4 * valorA * valorC;
         let x1 = 0;
@@ -13,15 +14,16 @@ function click_calcular() {
 
         if (delta < 0) alert(`Valor complexo`)
         else {
-            x1 = (-b + Math.sqrt(delta)) / 2 * valorA;
-            x2 = (-b - Math.sqrt(delta)) / 2 * valorA;
+            x1 = ((-valorB) + Math.sqrt(delta)) / (2 * valorA);
+            x2 = ((-valorB) - Math.sqrt(delta)) / (2 * valorA);
         }
-        document.getElementById("valor").value = `X1: ${x1} X2: ${x2}`;
+        document.getElementById("valorx1").value = x1;
+        document.getElementById("valorx2").value = x2;
     }
 }
 
 function click_limpar() {
-    document.getElementById("peso").value = "";
-    document.getElementById("altura").value = "";
-    document.getElementById("valor").value = "";
+    document.getElementById("a").value = "";
+    document.getElementById("b").value = "";
+    document.getElementById("c").value = "";
 }
