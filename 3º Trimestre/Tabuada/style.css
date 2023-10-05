@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.formulario {
+    max-width: 210px;
+    margin: 30px auto 10%;
+    padding: 20px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+}
+
+.valor {
+    padding: 10px;
+}
+
+#resultado {
+    padding: 10px;
+}
