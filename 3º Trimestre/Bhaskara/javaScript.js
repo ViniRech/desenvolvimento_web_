@@ -26,4 +26,6 @@ function click_limpar() {
     document.getElementById("a").value = "";
     document.getElementById("b").value = "";
     document.getElementById("c").value = "";
+    document.getElementById("valorx1").value = "";
+    document.getElementById("valorx2").value = "";
 }
