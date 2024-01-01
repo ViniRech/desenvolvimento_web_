@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Criação de varáveis */
+:root {
+    --cor1: #595856;
+    --cor2: #8c8b88;
+    --cor3: #ececec;
+    --cor4: #262626;
+    --cor5: #0d0d0d;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    padding: 1.5rem;
+    background-color: var(--cor5);
+}
+
+.botao-login {
+    padding: 0.5rem 1.5rem;
+}
+
+.titulo {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.875rem;
+}
+
+/* Seção de cards */
+.secao2 {
+    background-color: var(--cor3);
+}
+
+.cards {
+    padding: 3rem;
+}
+
+/* Seção formulário */
+.secao3 {
+    background-size: cover; 
+    background-image: url("img/foto-formulario.jpg");
+    display: grid;
+    justify-items: center;
+    filter: grayscale(.3);
+}
+
+.formulario {
+    row-gap: 1rem;
+    max-width: 40rem;
+    padding: 5rem 3rem;
+    background-color: var(--cor3);
+    border-radius: 1rem;
+    margin: 5rem;
+}
+
+.div-portao-inferno {
+    display: grid;
+    justify-content: center;
+}
+
+.div-portao-inferno img {
+    width: 7rem;
+    margin: auto;
+}
+
+.div-botao {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.div-botao button {
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: var(--cor5);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rodape div {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: .3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape div svg {
+    color: var(--cor3);
+}
+
+.endereco {
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+.endereco:hover {
+    text-decoration: underline;
+}
+
+.rodape-link {
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+.rodape-link:hover {
+    text-decoration: underline;
+}
